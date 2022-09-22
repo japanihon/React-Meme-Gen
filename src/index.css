@@ -1,13 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Press Start 2P", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Press Start 2P", cursive;
+}
+
+main {
+  padding: 36px;
+}
+
+.header {
+  width: 38rem;
+  display: flex;
+  align-items: center;
+  height: 165px;
+  background: linear-gradient(90deg, #99ffff 1.18%, #4d88ff 100%);
+  color: white;
+  padding: 20px;
+  border: 10px solid #d5d4d8;
+  border-radius: 13px;
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+  border: 5px solid #d5d4d8;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form--input {
+  width: 18rem;
+  height: 3rem;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 5px;
+  border: 10px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  width: 38rem;
+  grid-column: 1 / -1;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #99ffff 1.18%, #4d88ff 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  width: 38rem;
+  border-radius: 3px;
+  border: 10px solid #d5d4d8;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
